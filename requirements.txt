@@ -1,6 +1,0 @@
-pandas == 2.2.3
-fastapi == 0.115.11
-uvicorn == 0.34.0
-pydantic-settings == 2.8.1
-yfinance == 0.2.54
-transformers == 4.49.0
