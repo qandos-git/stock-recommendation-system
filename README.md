@@ -2,13 +2,13 @@
 # Stock Recommendation System
 ## Overview
 
-This project builds an stock recommendation system, the system answers a widly asked question by investors, that is: which stock is better to invest in? 
+This project develops a stock recommendation system that answers a common question among investors: **Which stock is the best to invest in?**
 
-To give you the answer, we built a recommendation system that gets list of stocks symbols from the user, then return them ranked from best to lowest. 
+To provide an answer, the system takes a list of stock symbols from the user and ranks them from best to worst based on sentiment analysis.
 
-The stock news sentiment affects the stock price, as the invseteros actions affected by the news either by buying stocks that have good news (which lead to stock price increase) or selling stock that have bad news (which lead to stock price decrease). With this app you can estimate the feuture and making your investment decision based on ground truth.
+Stock prices are influenced by news sentiment, as investors tend to buy stocks with positive news—driving prices up—and sell those with negative news—causing prices to drop. This app helps you anticipate market movements and make informed investment decisions based on real data.
 
-I am planning to keep improving this project, help me with your ideas and your insights. 
+I plan to keep improving this project, and I’d love to hear your ideas and insights!
 
 ## Features
 - **Model-Controller-Service (MCS) Architecture**: Make this app maintainable and scaliable by seprating (Model): schema, from (Service) logic, from (Controller) the project core that links between models and services. This is a famous design pattern for API devlopment.
