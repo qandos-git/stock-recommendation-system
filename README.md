@@ -46,12 +46,20 @@ To rank stocks based on sentiment analysis, use the POST endpoint /stock/v1/ wit
 
 4. Use Post man from `src\assets\stock-ranker.postman_collection.json` or use CURL:
 
+   **macOS/Linux:**
+
                 curl -X 'POST' \
                 'http://127.0.0.1:8000/stock/v1/' \
                 -H 'Content-Type: application/json' \
                 -d '{
                     "symbols": ["AAPL", "TSLA", "GOOGL"]
-                }' 
+                }'
+   **Windows**
+   
+             curl -X POST "http://127.0.0.1:8000/stock/v1/" ^
+              -H "Content-Type: application/json" ^
+              -d "{""symbols"": [""AAPL"", ""TSLA"", ""GOOGL""]}"
+
 
 ### System Architecture
 ~soon
