@@ -37,7 +37,7 @@ I plan to keep improving this project, and I’d love to hear your ideas and ins
  
 2. Pull and Run Docker Image in single command:
    
-       run -d --name stock-rank-app-container -p 8000:8000 qandos/stock-ranker-app:latest
+       docker run -d --name stock-rank-app-container -p 8000:8000 qandos/stock-ranker-app:latest
    
 3. Example Request
 To rank stocks based on sentiment analysis, use the POST endpoint /stock/v1/ with a JSON payload like this:
@@ -47,7 +47,7 @@ To rank stocks based on sentiment analysis, use the POST endpoint /stock/v1/ wit
 4. Use Post man from `src\assets\stock-ranker.postman_collection.json` or use CURL:
 
                 curl -X 'POST' \
-                'http://127.0.0.1:8001/stock/v1/' \
+                'http://127.0.0.1:8000/stock/v1/' \
                 -H 'Content-Type: application/json' \
                 -d '{
                     "symbols": ["AAPL", "TSLA", "GOOGL"]
